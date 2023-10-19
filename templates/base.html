@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome/css/all.css') }}">
     <title>MyntTech Elections</title>
 </head>
-<body>
+<body class="bg-[#141f35] sm:bg-blue-500 md:bg-green-500 lg:bg-yellow-300">
     {% block content %}
     {% block login_container %}{% endblock login_container %}
     {% endblock content %}
