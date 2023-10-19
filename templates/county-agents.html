@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+
+    {% block content %}
+    <div class=" text-center ">
+        <div class="flex flex-row justify-between items-center  m-5">
+            <i class="text-[#7a8696] fas fa-chevron-left"></i>
+            <p class="text-1xl font-bold text-[#edeef2]">
+                Mombasa county agents!
+            </p>
+            <i class="text-[#7a8696] fas fa-home"></i>
+        </div>
+
+        <!-- top list -->
+        <div class="m-2">
+            <div class="flex flex-row items-center scroll-smooth">
+                
+                <div class="flex flex-col mx-1 justify-center items-center rounded-2xl bg-[#162743] border border-[#1d3050] px-2 py-4 w-1/4">
+                       <p class="text-[#7a8696] rounded-lg bg-[#143256] px-1 py-1 w-8">01</p>
+                       <p class="text-[#7a8696] text-sm ">Changamwe</p>
+                </div>
+
+                <div class="flex flex-col mx-1 justify-center items-center rounded-2xl bg-[#162743] border border-[#1d3050] px-2 py-4 w-1/4">
+                    <p class="text-[#7a8696] rounded-lg bg-[#143256] px-1 py-1 w-8">02</p>
+                    <p class="text-[#7a8696] text-sm ">Jomvu</p>
+             </div>
+
+             <div class="flex flex-col mx-1 justify-center items-center rounded-2xl bg-[#162743] border border-[#1d3050] px-2 py-4 w-1/4">
+                <p class="text-[#7a8696] rounded-lg bg-[#143256] px-1 py-1 w-8">03</p>
+                <p class="text-[#7a8696] text-sm ">Kisauni</p>
+         </div>
+
+         <div class="flex flex-col mx-1 justify-center items-center rounded-2xl bg-[#162743] border border-[#1d3050] px-2 py-4 w-1/4">
+            <p class="text-[#7a8696] rounded-lg bg-[#143256] px-1 py-1 w-8">04</p>
+            <p class="text-[#7a8696] text-sm ">Jomvu</p>
+     </div>
+     <div class="flex flex-col mx-1 justify-center items-center rounded-2xl bg-[#162743] border border-[#1d3050] px-2 py-4 w-1/4">
+        <p class="text-[#7a8696] rounded-lg bg-[#143256] px-1 py-1 w-8">04</p>
+        <p class="text-[#7a8696] text-sm ">Jomvu</p>
+ </div>
+
+            </div>
+        </div>
+        <!-- top list ends -->
+
+        <div class="my-5">
+            <div class="flex flex-row justify-between items-center  m-3">
+                <p class="text-1xl font-bold text-[#edeef2]">
+                    Live County Tallying
+                </p>
+                <p class="text-[#7a8696] text-xs">Last Update 6:40:25 Pm</p>
+            </div>
+        </div>
+
+        <!-- table -->
+        <table class="table-fixed border rounded border-red-500 ">
+            <thead class="border border-red-500 ">
+              <tr>
+                <th class="border bg-[#1d9efc] text-[#f2ffff]">Agent's Form 34A</th>
+                <th class="border border-[#22334f] ">IEBC's Form 34A</th>
+                
+                <th class="border border-[#22334f] ">IEBC's Form 34A</th>
+                <th class="border border-[#22334f] ">IEBC's Form 34A</th>
+              </tr>
+            </thead>
+            <tbody class="border border-[#22334f] ">
+              <tr class="border border-[#22334f] ">
+                <td class="border border-[#22334f] text-[#7a8696]">
+                    <div>
+                        <p>Registered</p>
+                        <p class="text-white">650,256</p>
+                    </div>
+                </td>
+
+                <td class="border border-[#22334f] text-[#7a8696]">
+                    <div>
+                        <p>Valid Votes</p>
+                        <p class="text-white">377,235</p>
+                    </div>
+                </td>
+
+                <td class="border border-[#22334f] text-[#7a8696]">
+                    <div>
+                        <p>Rejected</p>
+                        <p class="text-white">377</p>
+                    </div>
+                </td>
+                
+                
+              </tr>
+
+              
+              <tr class="border border-[#22334f] ">
+                <td class="border border-[#22334f] ">
+                    <div class="flex flex-col justify-center items-center">
+                        <div class="flex flex-row justify-center items-center">
+                            <i class="text-[#44c7a8] fas fa-arrow-up"></i>
+                            <p class="text-white">251,500</p>
+                        </div>
+                        <img class="w-10 h-10 rounded-xl" src="{{ url_for('static', filename='images/c6aca26f823b67b1f79b94b5e56a9796') }}">
+                    </div>
+                </td>
+                
+                
+                <td class="border border-[#22334f] ">
+                    <div class="flex flex-col justify-center items-center">
+                        <div class="flex flex-row justify-center items-center">
+                            <i class="text-[#f60667] fas fa-arrow-down"></i>
+                            <p class="text-white">125,500</p>
+                        </div>
+                        <img class="w-10 h-10 rounded-xl" src="{{ url_for('static', filename='images/3310a957d41911af45bc2564d8d873d7') }}">
+                    </div>
+                </td>
+
+                <td class="border border-[#22334f] ">
+                    <div class="flex flex-col justify-center items-center">
+                        <div class="flex flex-row justify-center items-center">
+                            <p class="text-white">500</p>
+                        </div>
+                        <img class="w-10 h-10 rounded-xl" src="{{ url_for('static', filename='images/0ff196e70bab0df693d923ad93f2eac8') }}">
+                    </div>
+                </td>
+
+                <td class="border border-[#22334f] ">
+                    <div class="flex flex-col justify-center items-center">
+                        <div class="flex flex-row justify-center items-center">
+                            <p class="text-white">320</p>
+                        </div>
+                        <img class="w-10 h-10 rounded-xl" src="{{ url_for('static', filename='images/900da2b5e9b438fabd36d01f56fe681d') }}">
+                    </div>
+                </td>
+                
+              </tr>
+              <tr class="border border-[#22334f] ">
+                <td class="border border-[#22334f] ">Shining Star</td>
+                <td class="border border-[#22334f] ">Earth, Wind, and Fire</td>
+                
+              </tr>
+            </tbody>
+          </table>
+          <!-- table ends-->
+
+    </div>
+    
+    {% endblock content %}
