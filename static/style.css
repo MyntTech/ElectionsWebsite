@@ -647,6 +647,10 @@ video {
   scroll-behavior: smooth;
 }
 
+.text-ellipsis {
+  text-overflow: ellipsis;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -841,6 +845,11 @@ video {
 .text-\[\#1d9efc\] {
   --tw-text-opacity: 1;
   color: rgb(29 158 252 / var(--tw-text-opacity));
+}
+
+.text-red-700 {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
 }
 
 .underline {
