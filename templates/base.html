@@ -6,9 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome/css/all.css') }}">
+    {% block title %}
     <title>MyntTech Elections</title>
+    {% endblock title %}
 </head>
-<body class="bg-[#141f35] sm:bg-blue-500 md:bg-green-500 lg:bg-yellow-300">
+<body class="bg-[#141f35]">
+    {% block navbar %}
+        <nav class="flex flex-row justify-between m-3 text-[#edeef2] bg-[#162743] rounded-lg">
+            <div class="mx-3">
+                <a href="#">Logo</a>
+            </div>
+            <div class="flex flex-row ">
+                <div class="mx-3">
+                    <a href="#">One</a>
+                </div>
+                <div class="mx-3">
+                    <a href="#">Two</a>
+                </div>
+                <div class="mx-3">
+                    <a href="#live">Live</a>
+                </div>
+                <div  class="mx-3">
+                    <a href="{{url_for('county_agents')}}">County Agents</a>
+                </div>
+            </div>
+
+        </nav>
+    {% endblock navbar %}
+
     {% block content %}
     {% block login_container %}{% endblock login_container %}
     {% endblock content %}
