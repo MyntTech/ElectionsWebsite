@@ -14,6 +14,10 @@ def home():
 def county_agents():
     return render_template('county-agents.html', name="county-agents")
 
+@app.route('/county-results')
+def county_results():
+    return render_template('county-results.html', name="county-results")
+
 @app.route('/login')
 def login():
     return render_template('login.html', name="login")
