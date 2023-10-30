@@ -714,12 +714,12 @@ video {
 
 .bg-\[\#141f35\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(20 31 53 / var(--tw-bg-opacity));
+  background-color: #000;
 }
 
 .bg-\[\#143256\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(20 50 86 / var(--tw-bg-opacity));
+  background-color: #333;
 }
 
 .bg-\[\#162743\] {
@@ -733,7 +733,7 @@ video {
 }
 
 .bg-\[\] {
-  background-color: ;
+  background-color: #000;
 }
 
 .bg-\[\#1b3745\] {
